@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Home</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Flowbite -->
+    <script src="https://unpkg.com/flowbite@1.6.5/dist/flowbite.js"></script>
+  </head>
+  <body class="bg-lavender-web font-poppins text-raisin-black">
+    <!-- Navbar -->
+    <div
+      class="fixed z-50 w-full h-16 max-w-lg -translate-x-1/2 bg-white border border-davys-gray rounded-full bottom-4 left-1/2 shadow-lg"
+    >
+      <div class="grid h-full max-w-lg grid-cols-5 mx-auto">
+        <!-- Home -->
+        <button
+          onclick="window.location.href='index.html'"
+          data-tooltip-target="tooltip-home"
+          type="button"
+          class="nav-item group"
+        >
+          <svg
+            class="w-6 h-6 text-gray-800 dark:text-white"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M11.293 3.293a1 1 0 0 1 1.414 0l6 6 2 2a1 1 0 0 1-1.414 1.414L19 12.414V19a2 2 0 0 1-2 2h-3a1 1 0 0 1-1-1v-3h-2v3a1 1 0 0 1-1 1H7a2 2 0 0 1-2-2v-6.586l-.293.293a1 1 0 0 1-1.414-1.414l2-2 6-6Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+          <span class="sr-only">Home</span>
+        </button>
+        <div id="tooltip-home" class="tooltip">Home</div>
+
+        <!-- About -->
+        <button
+          onclick="window.location.href='about.html'"
+          data-tooltip-target="tooltip-about"
+          type="button"
+          class="nav-item group"
+        >
+          <svg
+            class="w-6 h-6 text-gray-800 dark:text-white"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M17.133 12.632v-1.8a5.406 5.406 0 0 0-4.154-5.262.955.955 0 0 0 .021-.106V3.1a1 1 0 0 0-2 0v2.364a.955.955 0 0 0 .021.106 5.406 5.406 0 0 0-4.154 5.262v1.8C6.867 15.018 5 15.614 5 16.807 5 17.4 5 18 5.538 18h12.924C19 18 19 17.4 19 16.807c0-1.193-1.867-1.789-1.867-4.175ZM8.823 19a3.453 3.453 0 0 0 6.354 0H8.823Z"
+            />
+          </svg>
+          <span class="sr-only">About</span>
+        </button>
+        <div id="tooltip-about" class="tooltip">About</div>
+
+        <!-- Upload -->
+        <button
+          onclick="window.location.href='upload.html'"
+          data-tooltip-target="tooltip-upload"
+          type="button"
+          class="nav-item group"
+        >
+          <svg
+            class="w-6 h-6 text-gray-800 dark:text-white"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 3a1 1 0 0 1 .78.375l4 5a1 1 0 1 1-1.56 1.25L13 6.85V14a1 1 0 1 1-2 0V6.85L8.78 9.626a1 1 0 1 1-1.56-1.25l4-5A1 1 0 0 1 12 3ZM9 14v-1H5a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2h-4v1a3 3 0 1 1-6 0Zm8 2a1 1 0 1 0 0 2h.01a1 1 0 1 0 0-2H17Z"
+            />
+          </svg>
+          <span class="sr-only">Upload</span>
+        </button>
+        <div id="tooltip-upload" class="tooltip">Upload</div>
+
+        <!-- Gallery -->
+        <button
+          onclick="window.location.href='gallery.html'"
+          data-tooltip-target="tooltip-gallery"
+          type="button"
+          class="nav-item group"
+        >
+          <svg
+            class="w-6 h-6 text-gray-800 dark:text-white"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M13 10a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2H14a1 1 0 0 1-1-1Z"
+              clip-rule="evenodd"
+            />
+            <path
+              fill-rule="evenodd"
+              d="M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12c0 .556-.227 1.06-.593 1.422A.999.999 0 0 1 20.5 20H4a2.002 2.002 0 0 1-2-2V6Zm6.892 12 3.833-5.356-3.99-4.322a1 1 0 0 0-1.549.097L4 12.879V6h16v9.95l-3.257-3.619a1 1 0 0 0-1.557.088L11.2 18H8.892Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+
+          <span class="sr-only">Gallery</span>
+        </button>
+        <div id="tooltip-gallery" class="tooltip">Gallery</div>
+
+        <!-- Team -->
+        <button
+          onclick="window.location.href='team.html'"
+          data-tooltip-target="tooltip-team"
+          type="button"
+          class="nav-item group"
+        >
+          <svg
+            class="w-6 h-6 text-gray-800 dark:text-white"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M5 3a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H5Zm14 18a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h4ZM5 11a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2H5Zm14 2a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h4Z"
+            />
+          </svg>
+
+          <span class="sr-only">Team</span>
+        </button>
+        <div id="tooltip-team" class="tooltip">Team</div>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class="container mx-auto mt-10 text-center">
+      <h1 class="text-3xl font-semibold">About</h1>
+    </div>
+  </body>
+</html>
